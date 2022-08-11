@@ -1,0 +1,36 @@
+Basic Practice:
+
+object Hello_World {
+   def main(args: Array[String]){
+     println("Hello World")
+     val exam = "Example string"
+     println(exam.substring(3))
+     println(exam.substring(2,5))
+     println(exam.splitAt(7))
+   }
+}
+
+Output:
+
+Hello World
+mple string
+amp
+(Example, string)
+
+
+Hackerrank Examples:
+1. Print Hello World
+object Hello_World {
+   def main(args: Array[String]){
+     println("Hello World")
+	 }
+}
+
+2. Print Hello world N times
+
+object Solution extends App {
+ def f(n: Int) = (1 to n).foreach(_ => println("Hello World"))
+
+  var n = scala.io.StdIn.readInt
+  f(n)
+}
