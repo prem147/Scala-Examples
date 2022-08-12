@@ -1,0 +1,51 @@
+Practice 2
+
+object other_probs {
+  def main(args: Array[String]){
+	import io.StdIn._
+	
+	/** Using if else condition**/
+	
+    println("Enter your age :")
+    val age=readInt
+    val response= if(age*2>25){
+      "Come in"
+    }
+    else{
+      "Sorry U Can't"
+    }
+    println(response)
+	
+    /** Using Comparators to compare strings**/
+	
+    val s1="Hello World"
+    val s2 ="Hello "+"World"
+    
+    if(s1==s2) println("Equal")
+    else println("Not Equal")
+    
+    val s3 =readLine+"World"
+    
+    if(s1==s3) println("Equal")
+    else println("Not Equal")
+	/** Bitwise Arithmetic **/
+	val s =36 << 1
+    println(s)
+  }
+}
+Output:
+
+Enter your age :
+20
+
+Come in
+
+Equal
+
+Hello 
+
+Equal
+
+72
+
+9
