@@ -1,0 +1,98 @@
+LMS Assignment:
+
+3.   Convert the following decimal values to binary (8-bit), hex (2-digit), and octal (3-digit).
+•   7
+•   18
+•   57
+•   93
+•   196
+
+for(w <- 0 to 4){
+    val s = readInt
+    println("Binary:",s.toBinaryString)
+    println("Hex:",s.toHexString)
+    println("Octal",s.toOctalString)
+   }
+   
+Output:
+7
+(Binary:,111)
+(Hex:,7)
+(Octal,7)
+18
+(Binary:,10010)
+(Hex:,12)
+(Octal,22)
+93
+(Binary:,1011101)
+(Hex:,5d)
+(Octal,135)
+57
+(Binary:,111001)
+(Hex:,39)
+(Octal,71)
+196
+(Binary:,11000100)
+(Hex:,c4)
+(Octal,304)
+
+6.   Using Scala as a calculator, figure out how much you must make each year to bring home
+  $100,000 assuming a 27% tax rate.
+
+val s =100000
+    val t=1-0.27
+    val r=s/t
+Output:
+(Amount to be brought home is,136986.301369863)
+
+7.   Write Boolean expressions for the following:
+•   Assume you have a variable called age. Tell if the person is old enough to legally drink.
+•   Given a height in inches, tell if a person can ride an amusement park ride that requires riders
+to be between 48” and 74”
+
+println("Enter your age :")
+    val age=readInt
+    val response= if(age>21){
+      "Come in"
+    }
+    else{
+      "Sorry U Can't"
+    }
+    println(response)
+
+Output:
+	
+Enter your age :
+20
+
+Sorry U Can't
+
+println("Enter your Height:")
+    val age=readInt
+    val response= if(age>=48 && age<=74){
+      "U Can ride"
+    }
+    else{
+      "Sorry U Can't"
+    }
+    println(response)
+
+Output:
+
+Enter your Height:
+49
+U Can ride
+8.   The reverse method can be called on a String. Use this to write a script where the user inputs a word (use readLine) and you tell them whether or not it is a palindrome.
+
+val a= readLine
+    val r=a.reverse
+    
+    if(r==a)
+      println(a," is a Palindrome")
+    else
+      println(a," is not a Palindrome")
+	  
+Output:
+
+malayalam
+(malayalam, is a Palindrome)
