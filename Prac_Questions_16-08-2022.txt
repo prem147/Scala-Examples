@@ -1,0 +1,176 @@
+ 1. Write a program to check whether a person is eligible for voting or not ?
+ println("Enter your age :")
+    val age=readInt
+    val response= if(age>18){
+      "Eligible to vote"
+    }
+    else{
+      "NOt Eligible"
+    }
+    println(response)
+	
+	Output:
+	
+	Enter your age :
+	20
+	Eligible to vote
+	
+2. Write a program to check whether a number entered by user is even or odd.
+
+println("Enter number:")
+   val r= readInt
+   if(r%2==0)
+     println("Even")
+   else
+     println("Odd")
+	 
+	Output:
+	Enter number:
+	5
+	Odd
+	
+3. Write a program to check whether a number is divisible by 7 or not.	
+ 
+ println("Enter number:")
+   val r= readInt
+   if(r%7==0)
+     println("Divisible by 7")
+   else
+     println("Not divisible by 7") 
+	 
+	 Output:
+	 
+	 Enter number:
+	 49
+	 Divisible by 7
+
+4. Write a program to display "Hello" if a number entered by user is a multiple of five , otherwise print "Bye".
+
+println("Enter number:")
+     val s= readInt
+   if(s%5==0)
+     println("Hello")
+   else
+     println("Bye")
+	 
+	 Enter number:
+	 19
+	 Bye
+
+5. Write a program to calculate the electricity bill (accept number of unit from user) according to the following criteria :
+             Unit                                                     Price  
+            First 100 units                                               no charge
+            Next 100 units                                              Rs 5 per unit
+            After 200 units                                             Rs 10 per unit
+(For example if input unit is 350 than total bill amount is Rs2000)
+
+ println("Enter the units:")
+    val a = readInt
+    if(a<=100)
+      println("No charge")
+    else if(a>100 && a<=200){
+      val price = (a-100)*5
+      println("Electricity bill:",price)}
+    else {
+      val price=100*5 +(a-200)*10
+      println("Electricity bill:",price)
+    }
+	Output:
+	
+	Enter the units:
+	350
+	(Electricity bill:,2000)
+	
+6. Write a program to display the last digit of a number.
+
+println("Enter number:")
+   var s=readInt
+   var r= s%10;
+   println("Last Digit:",r)
+   
+   Output:
+   Enter number:
+   1027
+   (Last Digit:,7)
+
+7.Write a program to check whether the last digit of a number( entered by user ) is 
+divisible by 3 or not.
+
+println("Enter number:")
+   var s=readInt
+   var r= s%10
+   if(r%3==0)
+   println("Divisible by 3")
+   else
+     println("Not divisible")
+	
+	Output:
+	
+	Enter number:
+	102
+	Not divisible
+
+8. Write a program to accept percentage from the user and display the grade according to the following criteria:
+
+         Marks                                    Grade
+         > 90                                       A
+         > 80 and <= 90                        		B
+         >= 60 and <= 80                     		C
+         below 60                                   D
+	
+	println("Enter Percentage:")
+    var s=readInt
+    
+    if(s<60)
+      println("D")
+    else if(s>=60 && s<=80)
+      println("C")
+    else if(s>80 && s<=90)
+      println("B")
+    else
+      println("A")
+	
+	Output:
+	
+	Enter Percentage:
+	65
+	C
+
+9. Write a program to accept the cost price of a bike and display the road tax to be paid according to the following criteria :
+
+        Cost price (in Rs)                                       	Tax
+        > 100000                                                	15%
+        > 50000 and <= 100000                           			10%
+        <= 50000                                                  	5% 
+		
+	println("Enter Cost of Bike:")
+    var r=readInt
+    
+    if(r<=50000)
+      println("5%")
+    else if(r>50000 && r<=100000)
+      println("10%")
+    else
+      println("15%")
+	  
+	Output:
+	
+	Enter Cost of Bike:
+	100001
+	15%
+
+10. Write a program to check whether an years is leap year or not. 
+
+	println("Enter Year:")
+    var s=readInt
+    
+    if(s%4==0 && s%100!=0 && s%400==0)
+      println("It is a Leap Year")
+    else
+      println("It is not")
+	  
+	Output:
+	
+	Enter Year:
+	3000
+	It is not
