@@ -1,0 +1,28 @@
+Practicing Higher order Functions
+
+def math(x: Double, y: Double, f:(Double, Double)=> Double) : Double=f(x,y)
+  var a=10
+  val mul=(x: Int) => x*a
+  
+  def main(args: Array[String]){
+    val result=math(50,20,(x,y)=>x*y)
+    println(result);
+    
+	println(mul(3))
+	
+	Output:
+	
+	1000.0
+	30
+	
+	/** PartialFunction**/
+    
+	val sqrroot: PartialFunction[Double, Double]={
+      case d: Double if d>0 =>Math.sqrt(d)
+    }
+    val list: List[Double] =List(3,9,25,-49)
+    println(list.collect(sqrroot))
+	
+	Output:
+	
+	List(1.7320508075688772, 3.0, 5.0)
