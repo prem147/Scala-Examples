@@ -1,4 +1,25 @@
 LMS Assignment:
+1. What are the types of the following expressions ?
+•   1			int
+•   1.7			double
+•   1.0			double
+•   ’h’			char
+•   "hi"		string
+•   5/8			float
+•   1+0.5		double
+•   7*0.5		double
+•   "hi".length		int
+
+2.   Do the following 8-bit binary arithmetic by hand.
+• 101011012 
++ 110101002
+=100000001	
+• 001111102 
++ 001110112
+= 01111001 
+• 010010102 
+∗ 001100102
+=0000111001110100
 
 3.   Convert the following decimal values to binary (8-bit), hex (2-digit), and octal (3-digit).
 •   7
